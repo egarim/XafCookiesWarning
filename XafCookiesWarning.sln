@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XafCookiesWarning.Module", "XafCookiesWarning.Module\XafCookiesWarning.Module.csproj", "{7FC54D94-2464-4151-A743-9890D6585543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XafCookiesWarning.Module.Web", "XafCookiesWarning.Module.Web\XafCookiesWarning.Module.Web.csproj", "{A341FCD5-049D-406A-9AEA-1EB1CD9E5294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XafCookiesWarning.Web", "XafCookiesWarning.Web\XafCookiesWarning.Web.csproj", "{1E3756E1-2265-49E4-8948-3A882F1AE9C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebforms", "SimpleWebforms\SimpleWebforms.csproj", "{8CFCDA9D-0FE3-410E-89B4-E7AD318ED0FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FC54D94-2464-4151-A743-9890D6585543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC54D94-2464-4151-A743-9890D6585543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC54D94-2464-4151-A743-9890D6585543}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{7FC54D94-2464-4151-A743-9890D6585543}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{7FC54D94-2464-4151-A743-9890D6585543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC54D94-2464-4151-A743-9890D6585543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A341FCD5-049D-406A-9AEA-1EB1CD9E5294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A341FCD5-049D-406A-9AEA-1EB1CD9E5294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A341FCD5-049D-406A-9AEA-1EB1CD9E5294}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{A341FCD5-049D-406A-9AEA-1EB1CD9E5294}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{A341FCD5-049D-406A-9AEA-1EB1CD9E5294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A341FCD5-049D-406A-9AEA-1EB1CD9E5294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3756E1-2265-49E4-8948-3A882F1AE9C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3756E1-2265-49E4-8948-3A882F1AE9C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3756E1-2265-49E4-8948-3A882F1AE9C4}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{1E3756E1-2265-49E4-8948-3A882F1AE9C4}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{1E3756E1-2265-49E4-8948-3A882F1AE9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3756E1-2265-49E4-8948-3A882F1AE9C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CFCDA9D-0FE3-410E-89B4-E7AD318ED0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFCDA9D-0FE3-410E-89B4-E7AD318ED0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFCDA9D-0FE3-410E-89B4-E7AD318ED0FD}.EasyTest|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFCDA9D-0FE3-410E-89B4-E7AD318ED0FD}.EasyTest|Any CPU.Build.0 = Debug|Any CPU
+		{8CFCDA9D-0FE3-410E-89B4-E7AD318ED0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFCDA9D-0FE3-410E-89B4-E7AD318ED0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B43FBB6-9AB0-4213-961B-650AE79D111F}
+	EndGlobalSection
+EndGlobal

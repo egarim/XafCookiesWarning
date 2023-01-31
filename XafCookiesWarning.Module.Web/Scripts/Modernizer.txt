@@ -1,0 +1,7 @@
+﻿function checkCookie(){
+    // Quick test if browser has cookieEnabled host property
+    if (!navigator.cookieEnabled) 
+        alert('cookies are disable, please enable them in your browser settings');
+    return true;
+  }
+checkCookie();
