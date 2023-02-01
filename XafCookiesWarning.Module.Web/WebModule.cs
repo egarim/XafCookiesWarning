@@ -13,6 +13,7 @@ using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.Model.DomainLogics;
 using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.Persistent.BaseImpl;
+using XafCookiesWarning.Module.Web.Controllers;
 
 namespace XafCookiesWarning.Module.Web {
     [ToolboxItemFilter("Xaf.Platform.Web")]
@@ -37,6 +38,11 @@ namespace XafCookiesWarning.Module.Web {
             //application.CreateCustomModelDifferenceStore += Application_CreateCustomModelDifferenceStore;
             application.CreateCustomUserModelDifferenceStore += Application_CreateCustomUserModelDifferenceStore;
             // Manage various aspects of the application UI and behavior at the module level.
+            application.CreateCustomLogonWindowControllers += application_CreateCustomLogonWindowControllers;
+        }
+        private void application_CreateCustomLogonWindowControllers(object sender, CreateCustomLogonWindowControllersEventArgs e)
+        {
+            e.Controllers.Add(((XafApplication)sender).CreateController<CheckCookiesController>());
         }
     }
 }

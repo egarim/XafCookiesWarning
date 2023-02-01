@@ -4,6 +4,7 @@ using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Layout;
 using DevExpress.ExpressApp.Model.NodeGenerators;
+using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
@@ -28,7 +29,8 @@ namespace XafCookiesWarning.Module.Web.Controllers
         public CheckCookiesController()
         {
             InitializeComponent();
-            this.TargetViewType = ViewType.ListView;
+            this.TargetViewType = ViewType.DetailView;
+            this.TargetObjectType = typeof(AuthenticationStandardLogonParameters);
             //this.TargetWindowType = WindowType.Main;
             simpleAction = new SimpleAction(this, "test cookies", "No Visible actions");
             simpleAction.Execute += SimpleAction_Execute;
@@ -38,8 +40,10 @@ namespace XafCookiesWarning.Module.Web.Controllers
         private void SimpleAction_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
             var script = ReadResourceFile("XafCookiesWarning.Module.Web.Scripts.Modernizer.txt");
-
-            WebWindow.CurrentRequestWindow.RegisterClientScript("cookies", script, true);
+            var CurrentType=this.View.CurrentObject.GetType();
+            var webWindow=(this.Application as WebApplication).LogonWindow;
+            //WebWindow.CurrentRequestWindow.RegisterClientScript("cookies", script, true);
+            webWindow.RegisterClientScript("cookies", script, true);
         }
 
         private string ReadResourceFile(string filename)
