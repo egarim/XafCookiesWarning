@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.ClientServer;
+using XafCookiesWarning.Module.BusinessObjects;
 
 namespace XafCookiesWarning.Web {
     // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Web.WebApplication
@@ -23,6 +24,11 @@ namespace XafCookiesWarning.Web {
 
         public XafCookiesWarningAspNetApplication() {
             InitializeComponent();
+            ((SecurityStrategy)Security).AnonymousAllowedTypes.Add(typeof(CookiesMessage));
+            ((SecurityStrategy)Security).AnonymousAllowedTypes.Add(typeof(DomainObject1));
+
+
+            //  public string Message { get; set; }
         }
         protected override IViewUrlManager CreateViewUrlManager() {
             return new ViewUrlManager();

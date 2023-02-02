@@ -1,7 +1,21 @@
 ﻿function checkCookie(){
     // Quick test if browser has cookieEnabled host property
-    if (!navigator.cookieEnabled) 
-        alert('cookies are disable, please enable them in your browser settings');
-    return true;
+    if (!navigator.cookieEnabled)
+    {
+        //alert('cookies are disable, please enable them in your browser settings');
+        popitup('CookiesMessage.aspx');
+        
+        //RaiseXafCallback(globalCallbackControl, 'cookies', 'false', '', false);
+    }
+    else
+    {
+        //RaiseXafCallback(globalCallbackControl, 'cookies', 'true', '', false);
+    }
+    
   }
+  function popitup(url) {
+        newwindow=window.open(url,'name','height=200,width=500');
+        if (window.focus) {newwindow.focus()}
+        return false;
+}
 checkCookie();
